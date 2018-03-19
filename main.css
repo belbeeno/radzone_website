@@ -15,7 +15,27 @@
 
 @font-face {
   font-family: 'RadZoneAlt';
-  src: url('font/Nunito-Regular.otf');
+  src: url('font/Nunito-Regular.ttf');
+}
+
+html {
+  background: #FFFDAE;
+  background-attachment: fixed;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #000;
+  font-size: 0;
+}
+
+a {
+  color: magenta;
+  text-decoration: none;
+  border-bottom: 1px dotted;
+}
+
+a:hover {
+  color: magenta;
+  border-bottom: 1px solid;
 }
 
 body {
@@ -23,138 +43,263 @@ body {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+  font-size: 16px;
 }
 
 p {
   font-family: 'RadZoneBody', arial, sans-serif;
   font-size: 18px;
-  color: #000000;
+  color: rgb(0, 0, 0);
 }
 
-h1 {
-  font-family: "RadZoneHeader";
-  font-weight: bold;
-  font-size: 50px;
-  color: #ED008c;
+p:last-child {
+  margin-bottom: 0;
+  z-index: 100;
 }
 
-h2 {
-  font-family: "RadZoneTitle";
-  font-weight: normal;
-  text-transform: none;
-  color: #ED008c;
+.parallax {
+  position: fixed;
 }
 
-.starter-template {
-  padding: 60px 0px 75px 0px;
-  text-align: center;
-}
+/**
+ * Position our elements
+ *
+ * Firstly we set our element position using `top`, `right`, `bottom`, `left`, then set your parallax movement using `margin` and `rem`.
+ *
+ * In this demo our 'base factor' is 50 (see JavaScript). Our 'factor' calculation never exceeds this number (when the viewport is fully scrolled), which means our `rem` calculations are based on this number.
+ *
+ * Example:
+ *
+ * If I set my `top` to `200px` and want this element to shift up by `400px`, our `rem` value is 400/10, or `-40em` (using negative margins to shift upwards).
+ */
 
-.topbar {
-  border: 0px;
-  padding-left: 25px;
-  padding-right: 25px;
-  background: -webkit-linear-gradient(top, rgba(20, 237, 216, 1), rgba(20, 237, 216, 1), rgba(20, 237, 216, 1), rgba(20, 237, 216, 0));
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom, rgba(20, 237, 216, 1), rgba(20, 237, 216, 1), rgba(20, 237, 216, 1), rgba(20, 237, 216, 0));
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom, rgba(20, 237, 216, 1), rgba(20, 237, 216, 1), rgba(20, 237, 216, 1), rgba(20, 237, 216, 0));
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom, rgba(20, 237, 216, 1), rgba(20, 237, 216, 1), rgba(20, 237, 216, 1), rgba(20, 237, 216, 0));
-  /* Standard syntax (must be last) */
-}
+/*********************** 
+* Left box  
+***********************/
 
-.bottombar {
-  font-family: 'RadZoneBody', arial, sans-serif;
-  font-size: small;
-  text-align: center;
-  padding-top: 25px;
-  background: -webkit-linear-gradient(top, rgba(20, 237, 216, 0), rgba(20, 237, 216, 1), rgba(20, 237, 216, 1), rgba(20, 237, 216, 1));
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom, rgba(20, 237, 216, 0), rgba(20, 237, 216, 1), rgba(20, 237, 216, 1), rgba(20, 237, 216, 1));
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom, rgba(20, 237, 216, 0), rgba(20, 237, 216, 1), rgba(20, 237, 216, 1), rgba(20, 237, 216, 1));
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom, rgba(20, 237, 216, 0), rgba(20, 237, 216, 1), rgba(20, 237, 216, 1), rgba(20, 237, 216, 1));
-  /* Standard syntax (must be last) */
-}
-
-.header_link {
-  font-family: 'RadZoneTitle', arial, sans-serif;
-  font-size: medium;
-}
-
-div.tv-wrapper {
-  position: relative;
-  padding-top: 25px;
-  padding-bottom: 75%;
-  height: 0;
-}
-
-div.tv-wrapper iframe {
-  box-sizing: border-box;
-  background: url('img/tv.jpg') center center no-repeat;
-  background-size: contain;
-  padding: 14% 27% 14% 8%;
-  position: absolute;
-  top: 0;
+#leftbox {
+  margin-right: 2.5%;
   left: 0;
+  top: 0;
+  width: 33%;
+  max-width: 350px;
+  height: 100%;
+  z-index: 10;
+  position: fixed;
+}
+
+.logo {
+  padding-top: 2.5%;
+  width: 100%;
+  border-right: 5px dotted rgba(0, 0, 0, 0.5);
+}
+
+.textbox {
+  /*background-color: rgba(0, 0, 0, 0.15);*/
+  text-align: center;
+  vertical-align: top;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 2%;
+  width: 100%;
+  position: relative;
+}
+
+.bottombox {
+  text-align: center;
+  position: fixed;
+  width: 33%;
+  max-width: 350px;
+  bottom: 0;
+}
+
+.iconsbox {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+  font-size: 2em;
+  padding: 5px;
+}
+
+.iconLink {
+  border-bottom: none;
+}
+
+.twitterIcon {
+  color: #00aced;
+}
+
+.twitterIcon:hover {
+  color: #11bdfe;
+}
+
+.mailIcon {
+  color: #fa5c5c;
+}
+
+.mailIcon:hover {
+  color: #ff8080;
+}
+
+.githubIcon {
+  color: #000;
+}
+
+.githubIcon:hover {
+  color: #888;
+}
+
+/***********************
+* Main asea
+***********************/
+
+#mainarea {
+  margin-top: 2.5%;
+  right: 2.5%;
+  width: 62.5%;
+  z-index: 10;
+  position: fixed;
+}
+
+.mainEntry {
+  margin: -2% 0 0 0;
   width: 100%;
   height: 100%;
 }
 
-div.parallax {
-  perspective: 1px;
-  height: 100vh;
-  overflow-x: hidden;
+.mainEntryContent {
+  width: 100%;
+  position: absolute;
 }
 
-div.parallax_layer {
+.mainEntryContent>h1 {
+  font-family: "RadZoneTitle";
+  color: #ED008c;
+  width: 100%;
+  height: 33%;
+  text-shadow: -1px -1px 0 #000,
+                1px -1px 0 #000,
+               -1px  1px 0 #000,
+                1px  1px 0 #000;
+  text-align: center;
+  margin: 0 0 0 0;
+  position: relative;
+  align-content: center;
+  font-size: 4vw;
+}
+
+.mainEntryContent>table {
+  overflow-y: auto;
+  width: 100%;
+}
+
+.thumbnail {
+  opacity: 1.0;
+  height: auto;
+}
+
+.thumbnail:hover {
+  opacity: 0.0;
+}
+
+.underthumb {
+  background-size: contain;
+  display: block;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0 10px 3px;
+}
+
+.description {
+  text-align: justify;
+  vertical-align: top;
+  left: 0; 
+  padding-left: 15px;
+  padding-right: 10%;
+}
+
+.description>p {
+  color: #FFF;
+  text-shadow: -1px -1px 0 #000,
+                1px -1px 0 #000,
+               -1px  1px 0 #000,
+                1px  1px 0 #000;
+}
+
+.description>p>a {
+  color: rgb(253, 177, 228);
+  text-shadow: -1px -1px 0 #000,
+                1px -1px 0 #000,
+               -1px  1px 0 #000,
+                1px  1px 0 #000;
+}
+
+table,
+tr {
+  border-style: none;
+}
+
+.aspect-ratio-box {
+  background: rgba(0, 0, 0, 0.0);
+  position: relative;
+  width: 100%;
+}
+
+.aspect-ratio-box::before {
+  content: "";
+  display: block;
+  padding-top: 40%;
+}
+
+.aspect-ratio-content {
   position: absolute;
   top: 0;
-  right: 0;
-  bottom: 0;
   left: 0;
+  bottom: 0;
+  right: 0;
 }
 
-div.parallax_layer-base {
-  transform: translateZ(0);
+/***********************
+* Shapes 
+************************/
+
+.shape0 {
+  width: 30%;
+  top: 140px;
+  margin-top: -2rem;
+  left: -4%;
+  z-index: 0;
 }
 
-div.parallax_layer-back {
-  background-image: url('img/background.png');
-  background-repeat: repeat-y;
-  background-size: cover;
-  transform: translateZ(-2px) scale(3);
+.shape1 {
+  width: 20%;
+  top: 380px;
+  margin-top: -8rem;
+  right: -4%;
+  z-index: 0;
 }
 
-a:link,
-a:visited {
-  color: rgb(229, 116, 190);
+.shape2 {
+  width: 40%;
+  top: 800px;
+  margin-top: -4rem;
+  left: 35%;
+  z-index: 0;
 }
 
-a:active,
-a:hover {
-  color: #FDB1E4;
-  text-decoration: underline;
+.shape3 {
+  width: 20%;
+  top: 1250px;
+  margin-top: -7rem;
+  right: -8%;
+  z-index: 0;
 }
 
-hr.modified {
-  border: 0;
-  height: 1px;
-  background: black;
-  background-image: -o-linear-gradient(left, #fffdae, #14edd8, #fffdae);
-  background-image: -webkit-linear-gradient(left, #fffdae, #14edd8, #fffdae);
-  background-image: -moz-linear-gradient(left, #fffdae, #14edd8, #fffdae);
-  background-image: -ms-linear-gradient(left, #fffdae, #14edd8, #fffdae);
-}
-
-hr.modified_two {
-  border: 0;
-  height: 1px;
-  background: black;
-  background-image: -webkit-linear-gradient(left, #FFF7AA, #999, #FFF7AA);
-  background-image: -moz-linear-gradient(left, #FFF7AA, #999, #FFF7AA);
-  background-image: -ms-linear-gradient(left, #FFF7AA, #999, #FFF7AA);
-  background-image: -o-linear-gradient(left, #FFF7AA, #999, #FFF7AA);
+.shape4 {
+  width: 20%;
+  top: 920px;
+  margin-top: -2rem;
+  left: -4%;
+  z-index: 0;
 }
