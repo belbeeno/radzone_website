@@ -61,6 +61,12 @@ p:last-child {
   position: fixed;
 }
 
+hr {
+  border: 0;
+  height: 1px;
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 150, from(#000), to(rgba(255, 255, 255, 0.0)));
+}
+
 /**
  * Position our elements
  *
@@ -171,6 +177,9 @@ p:last-child {
 .mainEntryContent {
   width: 100%;
   position: absolute;
+  background-image: url('https://radz.one/img/factory/backing.png');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .mainEntryContent>h1 {
@@ -194,18 +203,16 @@ p:last-child {
   width: 100%;
 }
 
+.thumbnails {
+  display: grid;
+  grid-column-gap: 10px;
+  grid-template-columns: 33% 33% 33%;
+  width: inline;
+  white-space: nowrap;
+}
+
 .thumbnail {
   opacity: 1.0;
-  height: auto;
-}
-
-.thumbnail:hover {
-  opacity: 0.0;
-}
-
-.underthumb {
-  background-size: contain;
-  display: block;
   width: 100%;
   height: auto;
   box-shadow: 0 0 10px 3px;
@@ -215,8 +222,14 @@ p:last-child {
   text-align: justify;
   vertical-align: top;
   left: 0; 
-  padding-left: 15px;
-  padding-right: 10%;
+  padding-left: 15%;
+  padding-right: 15%;
+  min-width: 200px;
+}
+
+.gameDesc {
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 
 .description>p {
@@ -235,9 +248,9 @@ p:last-child {
                 1px  1px 0 #000;
 }
 
-table,
-tr {
-  border-style: none;
+.descAvailability {
+  background-color: rgba(0,0,0,0.25);
+  text-align: center;
 }
 
 .aspect-ratio-box {

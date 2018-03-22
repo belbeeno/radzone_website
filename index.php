@@ -43,52 +43,43 @@ cl:'.        lWWo           .:0Nx.       lNMMWx.    .okKNMMN0kxddxkKNXk;
 		?>
 		
 		<div id="leftbox">
-		  <img src="img/logo.png" class="logo" />
-		  <div class="textbox">
-		    <p>video games by <a href="https://twitter.com/belbeeno">@belbeeno</a> and friends for you.</p>
-		  </div>
-		  <div class="bottombox">
-		    <div class="iconsbox">
-		      <a href="https://twitter.com/radzonegames" class="iconLink"><i class="icon twitterIcon fab fa-twitter"></i></a>
-		      <a href="https://github.com/belbeeno" class="iconLink"><i class="icon githubIcon fab fa-github"></i></a>
-		      <a href="mailto:hello@radz.one" class="iconLink"><i class="icon mailIcon fas fa-envelope"></i></a>
-		    </div>
-		  </div>
+			<img src="https://radz.one/img/logo.png" class="logo" />
+			<div class="textbox">
+				<p>video games by <a href="https://twitter.com/belbeeno">@belbeeno</a> and friends for you.</p>
+			</div>
+			<div class="bottombox">
+				<div class="iconsbox">
+					<a href="https://twitter.com/radzonegames" class="iconLink"><i class="icon twitterIcon fab fa-twitter"></i></a>
+					<a href="https://github.com/belbeeno" class="iconLink"><i class="icon githubIcon fab fa-github"></i></a>
+					<a href="mailto:hello@radz.one" class="iconLink"><i class="icon mailIcon fas fa-envelope"></i></a>
+				</div>
+			</div>
 		</div>
 		<!--div id="mainarea" style="background-color: rgba(1, 0, 0, 0.5)"-->
 		<div id="mainarea">
-			<svg height="100%" width="100%" viewBox="0 0 100 40" preserveAspectRatio="xMinYMid" style="position: absolute;">
-				<polygon points="5,10 100,5 80,40 15,30" style="fill:#000;" />
-				<polygon points="3,5 98,0 78,35 13,25" style="fill:rgba(97, 180, 225, 1);" />
-			</svg>
 			<div class="mainEntry aspect-ratio-box">
 				<div class="aspect-ratio-content">
 					<div class="mainEntryContent">
-						<h1>Factory Hiro</h1>
-						<table>
-							<tr>
-								<td>
-									<div class="underthumb" style="background-image: url('img/factory/img01.gif')">
-										<img class="thumbnail" src="img/factory/img00.gif" alt="Factory Hiro Image 1" />
-									</div>
-								</td>
-								<td class="description">
-									<p>
-										Factory Hiro has you playing as Hiro Kikuchi (Age 42) as he oversees an assembly line.  Each day is a new puzzle that will test your reflexes, patience and quick thinking right as it all goes horribly wrong...
-									</p>
-									<p>
-										This game was made by <a href="https://twitter.com/belbeeno">ya boi</a>, as well as art from <a href="https://twitter.com/kcgreenn/">@kcgreenn</a> and <a href="https://twiter.com/randyzero">@randyzero</a>.
-									</p>
-									<div class="description" style="text-align: center;">
-										<p><u>Available on</u>
-											<br/>&#x1F4BE PC and Mac through <a href="http://store.steampowered.com/app/770820/Factory_Hiro/">Steam</a> and <a href="https://radzone.itch.io/factory-hiro">Itch.io</a>
-											<br/><a href="https://play.google.com/store/apps/details?id=com.RadZone.Factory">&#x1F916 Android tablets and phones</a>
-											<br/><a href="https://itunes.apple.com/us/app/factory-hiro/id1302974264">&#x1F34F iPad and iPhone</a>
-										</p>
-									</div>
-								</td>
-							</tr>
-						</table>
+						<h1 style="margin-top: -2.5%;">Factory Hiro</h1>
+						<div class="description">
+							<p class="gameDesc">
+								Factory Hiro has you playing as Hiro Kikuchi (Age 42) as he oversees an assembly line.  Each day is a new puzzle that will test your reflexes, patience and quick thinking right as it all goes horribly wrong...
+								<br />This game was made by <a href="https://twitter.com/belbeeno">ya boi</a>, as well as art from <a href="https://twitter.com/kcgreenn/">@kcgreenn</a> and <a href="https://twiter.com/randyzero">@randyzero</a>.
+							</p>
+							<p><hr /></p>
+						</div>
+						<div class="thumbnails">
+						  <img class="thumbnail" src="https://radz.one/img/factory/img00.gif" alt="Factory Hiro Image 1" />
+							<img class="thumbnail" src="https://radz.one/img/factory/img01.gif" alt="Factory Hiro Image 2" />
+							<img class="thumbnail" src="https://radz.one/img/factory/img02.gif" alt="Factory Hiro Image 3" />
+						</div>
+						<div class="description">
+							<p class="descAvailability"><u>Available on</u>
+								<br/><i class="fas fa-desktop" style="color:black; font-size: 1.5em;"></i> PC and Mac through <a href="http://store.steampowered.com/app/770820/Factory_Hiro/">Steam</a> and <a href="https://radzone.itch.io/factory-hiro">Itch.io</a>
+								<br/><i class="fab fa-apple" style="color:#666666; font-size: 1.5em;"></i> <a href="https://play.google.com/store/apps/details?id=com.RadZone.Factory">Android tablets and phones</a>
+								<br/><i class="fab fa-android" style="color:#a4c639; font-size: 1.5em;"></i> <a href="https://itunes.apple.com/us/app/factory-hiro/id1302974264">iPad and iPhone</a>
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
