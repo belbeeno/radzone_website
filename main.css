@@ -35,7 +35,11 @@ a {
 
 a:hover {
   color: magenta;
-  border-bottom: 1px solid;
+  border-bottom: inherit solid;
+}
+
+.logoLink {
+  border-bottom: 0px dotted;
 }
 
 body {
@@ -48,7 +52,7 @@ body {
 
 p {
   font-family: 'RadZoneBody', arial, sans-serif;
-  font-size: 18px;
+  font-size: 1.1em;
   color: rgb(0, 0, 0);
 }
 
@@ -67,6 +71,32 @@ hr {
   background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 150, from(#000), to(rgba(255, 255, 255, 0.0)));
 }
 
+[class*="left-"] {
+  display: none;
+  width: 0;
+}
+[class*="top-"] {
+  display: block;
+}
+[class*="main-"] {
+  width: 95%;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .left-box {
+      display: block;
+      width: 33%;
+      border-right: none;
+    }
+    .top-mainheader {
+      display: none;
+    }
+    .main-box {
+      width: 62.5%;
+    }
+}
+
 /**
  * Position our elements
  *
@@ -83,7 +113,7 @@ hr {
 * Left box  
 ***********************/
 
-#leftbox {
+.left-box {
   margin-right: 2.5%;
   left: 0;
   top: 0;
@@ -94,10 +124,26 @@ hr {
   position: fixed;
 }
 
+.top-mainheader {
+  padding-top: 35px;
+  width: 100%;
+  border-bottom: 5px dotted rgba(0, 0, 0, 0.5);
+  margin-bottom: 5%;
+  text-align: center;
+}
+
 .logo {
   padding-top: 2.5%;
   width: 100%;
+}
+
+.leftlogo {
   border-right: 5px dotted rgba(0, 0, 0, 0.5);
+}
+
+.rightlogo {
+  padding-top: 2.5%;
+  width: 65%;
 }
 
 .textbox {
@@ -117,6 +163,14 @@ hr {
   width: 33%;
   max-width: 350px;
   bottom: 0;
+}
+
+.headerbox {
+  text-align: right;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .iconsbox {
@@ -157,15 +211,14 @@ hr {
 }
 
 /***********************
-* Main asea
+* Main area
 ***********************/
 
-#mainarea {
+.main-box {
   margin-top: 2.5%;
   right: 2.5%;
-  width: 62.5%;
   z-index: 10;
-  position: fixed;
+  position: absolute;
 }
 
 .mainEntry {
@@ -195,18 +248,13 @@ hr {
   margin: 0 0 0 0;
   position: relative;
   align-content: center;
-  font-size: 4vw;
-}
-
-.mainEntryContent>table {
-  overflow-y: auto;
-  width: 100%;
+  font-size: calc(12px + 4vw);
 }
 
 .thumbnails {
   display: grid;
   grid-column-gap: 10px;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 30% 30% 30%;
   width: inline;
   white-space: nowrap;
 }
@@ -247,6 +295,11 @@ hr {
                -1px  1px 0 #000,
                 1px  1px 0 #000;
 }
+
+.description>p>a:hover {
+  color: magenta;
+}
+
 
 .descAvailability {
   background-color: rgba(0,0,0,0.25);
