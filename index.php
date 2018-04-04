@@ -88,8 +88,8 @@ cl:'.        lWWo           .:0Nx.       lNMMWx.    .okKNMMN0kxddxkKNXk;
 					<div class="description">
 						<p class="descAvailability"><u>Available on</u>
 							<br/><i class="fas fa-desktop" style="color:black; font-size: 1.5em;"></i> PC and Mac through <a href="http://store.steampowered.com/app/770820/Factory_Hiro/">Steam</a> and <a href="https://radzone.itch.io/factory-hiro">Itch.io</a>
-							<br/><i class="fab fa-apple" style="color:#666666; font-size: 1.5em;"></i> <a href="https://play.google.com/store/apps/details?id=com.RadZone.Factory">Android tablets and phones</a>
-							<br/><i class="fab fa-android" style="color:#a4c639; font-size: 1.5em;"></i> <a href="https://itunes.apple.com/us/app/factory-hiro/id1302974264">iPad and iPhone</a>
+							<br/><i class="fab fa-android" style="color:#a4c639; font-size: 1.5em;"></i> <a href="https://play.google.com/store/apps/details?id=com.RadZone.Factory">Android tablets and phones</a>
+							<br/><i class="fab fa-apple" style="color:#666666; font-size: 1.5em;"></i> <a href="https://itunes.apple.com/us/app/factory-hiro/id1302974264">iPad and iPhone</a>
 						</p>
 					</div>
 				</div>
