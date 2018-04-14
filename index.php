@@ -76,7 +76,7 @@ cl:'.        lWWo           .:0Nx.       lNMMWx.    .okKNMMN0kxddxkKNXk;
 					<div class="description">
 						<p class="gameDesc">
 							Factory Hiro has you playing as Hiro Kikuchi (Age 42) as he oversees an assembly line.  Each day is a new puzzle that will test your reflexes, patience and quick thinking right as it all goes horribly wrong...
-							<br />This game was made by <a href="https://twitter.com/belbeeno">ya boi</a>, as well as art from <a href="https://twitter.com/kcgreenn/">@kcgreenn</a> and <a href="https://twiter.com/randyzero">@randyzero</a>.
+							<br />This game was made by <a href="https://twitter.com/belbeeno">ya boi</a>, as well as art from <a href="https://twitter.com/kcgreenn/">@kcgreenn</a> and <a href="https://twitter.com/randyzero">@randyzero</a>.
 						</p>
 						<hr />
 					</div>
